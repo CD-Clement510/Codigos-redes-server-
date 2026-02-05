@@ -1,0 +1,26 @@
+Sub MiPrimeraMacro()
+    ' Macro para resumir datos
+    
+    ' 1. Ir a la hoja de datos
+    Sheets("Datos").Activate
+    
+    ' 2. Poner título
+    Range("A1").Value = "REPORTE DIARIO"
+    Range("A1").Font.Bold = True
+    Range("A1").Font.Size = 14
+    
+    ' 3. Poner fecha
+    Range("A2").Value = "Fecha: " & Date
+    
+    ' 4. Calcular total
+    Range("B10").Value = "=SUM(B2:B9)"
+    
+    ' 5. Ajustar columnas
+    Columns("A:B").AutoFit
+    
+    ' 6. Ir al inicio
+    Range("A1").Select
+    
+    ' Mensaje final
+    MsgBox "Reporte generado correctamente!"
+End Sub
