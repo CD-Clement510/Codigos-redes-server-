@@ -1,3 +1,5 @@
+opciones ---> presonalidad ----> programador / desarrollador
+
 Sub MiPrimeraMacro()
     ' Macro para resumir datos
     
